@@ -1,11 +1,14 @@
 .header {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   top: 0;
   left: 0;
-  background-color: lightblue;
   width: 100vw;
-  height: clamp(60px, 8%, 8%);
+  height: 4rem;
+  z-index: 999;
+  /* min-height: 60px; */
   overflow: hidden;
+  background-color: lightblue;
 }
 .header-container {
   height: clamp(60px, 8%, 8%);
