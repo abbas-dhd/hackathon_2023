@@ -1,0 +1,57 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  width: 100vw;
+  height: clamp(60px, 8%, 8%);
+  overflow: hidden;
+}
+.header-container {
+  height: clamp(60px, 8%, 8%);
+  width: 100vw;
+  position: relative;
+  /* height: 8%; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-title {
+  position: relative;
+
+  width: 75%;
+  height: 100%;
+  display: flex;
+  margin-left: 1rem;
+  justify-content: left;
+  align-items: center;
+  flex-shrink: 1;
+}
+.header-title-name {
+  color: black;
+  font-family: "Dancing Script";
+  font-weight: 700;
+
+  font-size: 10vw;
+}
+
+.header-profile {
+  width: 13%;
+  height: 75%;
+
+  overflow: hidden;
+}
+
+.header-profile img {
+  height: 100%;
+}
+
+.header-bg-image {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  height: 100px;
+  opacity: 20%;
+}
