@@ -6,11 +6,12 @@ const ImageCarousel = () => {
   return (
     <Carousel
       autoPlay
+      animationHandler="fade"
+      swipeable={false}
       infiniteLoop={true}
       interval={2000}
       showStatus={false}
       showArrows={false}
-      showIndicators={false}
       showThumbs={false}
       emulateTouch={true}
     >
