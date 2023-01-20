@@ -6,7 +6,7 @@
   height: 4rem;
   z-index: 999;
   overflow: hidden;
-  background-color: lightblue;
+  background-color: white;
   transition: all 0.5s;
 }
 .header-container {
@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: left;
 }
 
 .header-title {
@@ -27,7 +27,7 @@
   height: 100%;
   display: flex;
   margin-left: 1rem;
-  justify-content: left;
+  /* justify-content: left; */
   align-items: center;
   flex-shrink: 1;
 }

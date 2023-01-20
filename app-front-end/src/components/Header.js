@@ -29,12 +29,12 @@ const Header = () => {
       <div className={`${classes["header-container"]}`}>
         {/* This is title for the store */}
         <div className={classes["header-title"]}>
-          <h2 className={classes["header-title-name"]}>Orion Fashion</h2>
+          <h2 className={classes["header-title-name"]}>iuvenes</h2>
         </div>
         {/* This is Profile Button */}
-        <div className={classes["header-profile"]}>
+        {/* <div className={classes["header-profile"]}>
           <img src="https://img.icons8.com/tiny-glyph/64/null/gender-neutral-user.png" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

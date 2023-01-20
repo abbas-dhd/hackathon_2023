@@ -1,4 +1,5 @@
 .card-container {
+  position: relative;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   /* width: 100%; */
@@ -59,4 +60,16 @@
   font-weight: 700;
   font-size: 0.75rem;
   color: #43ce24;
+}
+
+.likes {
+  position: absolute;
+  top: 3%;
+  right: 6%;
+  display: flex;
+  background-color: rgba(255, 255, 255);
+  color: black;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  border-radius: 3px;
 }

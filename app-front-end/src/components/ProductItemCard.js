@@ -11,6 +11,10 @@ const ProductItemCard = (props) => {
   }
   return (
     <div className={classes["card-container"]} onClick={productListHandler}>
+      <div className={classes["likes"]}>
+        <div>👍</div>
+        <div>{Math.floor(Math.random() * 100)}</div>
+      </div>
       <div className={classes["product-image"]}>
         <img src={productDetails?.link[0]} />
       </div>
