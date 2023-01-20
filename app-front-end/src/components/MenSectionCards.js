@@ -22,9 +22,9 @@ const MenSectionCards = () => {
   return (
     <div className={classes["men-container"]}>
       <div className={classes["men-header"]} onClick={productListHandler}>
-        <p>Trending now! </p>
+        <p>Trending Deals </p>
         {/* route to mens product section from below link */}
-        <a>{"view more"}</a>
+        <a>{"view more  >"}</a>
       </div>
       <div className={classes["men-card-container"]}>
         {product?.map((elem, index) => {
