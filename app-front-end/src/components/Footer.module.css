@@ -6,7 +6,7 @@
   background-color: lightblue;
   width: 100vw;
   /* height: clamp(60px, 8%, 8%); */
-  height: 4rem;
+  height: 3.5rem;
   z-index: 999;
   overflow: hidden;
 }
@@ -29,8 +29,12 @@
 }
 
 .footer-item {
-  height: 70%;
+  height: 60%;
 }
 .footer-item img {
   height: 100%;
+}
+
+.clips {
+  /* height: 48%; */
 }

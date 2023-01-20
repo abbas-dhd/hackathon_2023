@@ -1,12 +1,10 @@
 .header {
-  /* position: absolute; */
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 4rem;
   z-index: 999;
-  /* min-height: 60px; */
   overflow: hidden;
   background-color: lightblue;
 }
@@ -36,14 +34,12 @@
   color: black;
   font-family: "Dancing Script";
   font-weight: 700;
-
   font-size: 10vw;
 }
 
 .header-profile {
   width: 13%;
   height: 75%;
-
   overflow: hidden;
 }
 
@@ -57,4 +53,8 @@
   left: 0;
   height: 100px;
   opacity: 20%;
+}
+
+.transparent-background {
+  background-color: transparent;
 }

@@ -8,7 +8,8 @@ const HeroSection = () => {
         <ImageCarousel />
       </div>
       <button className={classes["hero-button"]}>
-        Buy Now <span>{">"}</span>
+        <p>Explore Collection </p>
+        <div>{"►"}</div>
       </button>
     </div>
   );

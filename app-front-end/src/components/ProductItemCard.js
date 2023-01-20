@@ -1,17 +1,31 @@
+import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import classes from "./ProductItemCard.module.css";
 const ProductItemCard = (props) => {
+  const productDetails = props.details;
+  let navigate = useNavigate();
+  // const { id } = useParams();
+
+  function productListHandler() {
+    navigate(`/product/${productDetails.id}`);
+  }
   return (
-    <div className={classes["card-container"]}>
+    <div className={classes["card-container"]} onClick={productListHandler}>
       <div className={classes["product-image"]}>
-        <img src="https://images.pexels.com/photos/1964970/pexels-photo-1964970.jpeg?auto=compress&cs=tinysrgb&w=600" />
+        <img src={productDetails?.link[0]} />
       </div>
       <div className={classes["product-details"]}>
         <div className={classes["product-title"]}>
-          <p>
-            Men's Burnt Orange Flat Knit Sweater asdsad asdasd s adsdas adda13{" "}
-          </p>
+          <p>{productDetails?.name}</p>
         </div>
-        <div className={classes["product-price"]}>₹1699</div>
+        <div className={classes["price-details"]}>
+          <div className={classes["product-price"]}>
+            ₹{productDetails?.price}
+          </div>
+          <div className={classes["discount-perc"]}>
+            ({productDetails?.discount}% OFF)
+          </div>
+        </div>
       </div>
     </div>
   );

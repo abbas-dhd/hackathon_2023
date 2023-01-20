@@ -39,10 +39,24 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   flex-direction: column;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: left;
 }
 
 .product-price {
+  font-weight: 600;
+}
+.price-details {
+  width: 70%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-perc {
   font-weight: 700;
+  font-size: 0.75rem;
+  color: #43ce24;
 }

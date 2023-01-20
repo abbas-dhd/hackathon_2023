@@ -11,6 +11,7 @@ const ImageCarousel = () => {
       infiniteLoop={true}
       interval={2000}
       showStatus={false}
+      showIndicators={false}
       showArrows={false}
       showThumbs={false}
       emulateTouch={true}
