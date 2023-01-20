@@ -7,6 +7,7 @@
   z-index: 999;
   overflow: hidden;
   background-color: lightblue;
+  transition: all 0.5s;
 }
 .header-container {
   height: clamp(60px, 8%, 8%);
@@ -38,13 +39,13 @@
 }
 
 .header-profile {
-  width: 13%;
-  height: 75%;
+  /* width: 20px; */
+  /* height: 75%; */
   overflow: hidden;
 }
 
 .header-profile img {
-  height: 100%;
+  height: 30px;
 }
 
 .header-bg-image {
@@ -57,4 +58,5 @@
 
 .transparent-background {
   background-color: transparent;
+  transition: all 0.5s;
 }

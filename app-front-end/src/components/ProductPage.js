@@ -87,6 +87,15 @@ const ProductPage = () => {
           <h4>Description</h4>
           <p>{product.description}</p>
         </div>
+        <div className={classes["buttons-container"]}>
+          <button className={`${classes["button"]} ${classes["add-cart"]} `}>
+            Add to Cart
+          </button>
+          <button className={`${classes["button"]} ${classes["buy"]} `}>
+            Buy now
+          </button>
+        </div>
+        <div className={classes["filler"]}></div>
       </div>
     </div>
   );

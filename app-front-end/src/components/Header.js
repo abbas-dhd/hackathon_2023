@@ -22,10 +22,10 @@ const Header = () => {
         isTransparent ? classes[transparentClassName] : ""
       }`}
     >
-      <img
+      {/* <img
         className={classes["header-bg-image"]}
         src="https://www.freepnglogos.com/uploads/shoes-png/dance-shoes-png-transparent-dance-shoes-images-5.png"
-      />
+      /> */}
       <div className={`${classes["header-container"]}`}>
         {/* This is title for the store */}
         <div className={classes["header-title"]}>
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
         {/* This is Profile Button */}
         <div className={classes["header-profile"]}>
-          <img src={"https://static.thenounproject.com/png/1559154-200.png"} />
+          <img src="https://img.icons8.com/tiny-glyph/64/null/gender-neutral-user.png" />
         </div>
       </div>
     </div>

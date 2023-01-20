@@ -23,10 +23,6 @@ const Footer = () => {
 
   return (
     <div className={classes["footer"]}>
-      {/* <img
-        className={classes["footer-bg-image"]}
-        src="https://www.freepnglogos.com/uploads/shoes-png/shoes-wasatch-running-3.png"
-      /> */}
       <div className={`${classes["footer-container"]}`}>
         <div
           className={`${classes.home} ${classes["footer-item"]}`}

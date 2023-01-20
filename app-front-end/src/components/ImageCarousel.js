@@ -19,10 +19,22 @@ const ImageCarousel = () => {
       <div>
         <img
           alt=""
-          src="https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg"
+          src="https://orionstorage.s3.ap-south-1.amazonaws.com/promotional/promotional-1.png"
         />
       </div>
       <div>
+        <img
+          alt=""
+          src="https://orionstorage.s3.ap-south-1.amazonaws.com/promotional/promotional-2.png"
+        />
+      </div>
+      <div>
+        <img
+          alt=""
+          src="https://orionstorage.s3.ap-south-1.amazonaws.com/promotional/promotional-3.png"
+        />
+      </div>
+      {/* <div>
         <img
           alt=""
           src="https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg"
@@ -45,13 +57,7 @@ const ImageCarousel = () => {
           alt=""
           src="https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg"
         />
-      </div>
-      <div>
-        <img
-          alt=""
-          src="https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg"
-        />
-      </div>
+      </div> */}
     </Carousel>
   );
 };

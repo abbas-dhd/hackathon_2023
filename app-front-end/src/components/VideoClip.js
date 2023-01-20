@@ -1,6 +1,7 @@
 import VisibilitySensor from "react-visibility-sensor";
 import { useEffect, useRef, useState } from "react";
 import classes from "./VideoClip.module.css";
+import { useNavigate } from "react-router-dom";
 
 const VideoClip = (props) => {
   const data = props.data;
@@ -15,9 +16,16 @@ const VideoClip = (props) => {
 
   const [playing, setPlaying] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
+  const navigate = useNavigate();
   const videoRef = useRef(null);
 
-  const onVideoPress = () => {
+  let likeClass = isLiked ? "liked" : "";
+
+  function productPageRouter() {
+    navigate(`/product/${productId}`);
+  }
+  function onVideoPress() {
     if (playing) {
       videoRef.current.pause();
       setPlaying(false);
@@ -25,7 +33,10 @@ const VideoClip = (props) => {
       videoRef.current.play();
       setPlaying(true);
     }
-  };
+  }
+  function likeHandler() {
+    setIsLiked((isLiked) => !isLiked);
+  }
   useEffect(() => {
     if (isVisible) {
       videoRef.current.play();
@@ -43,8 +54,7 @@ const VideoClip = (props) => {
           <video
             className={classes["video-player"]}
             loop
-            // muted={"false"}
-            // onClick={onVideoPress}
+            onClick={onVideoPress}
             ref={videoRef}
             src={videoUrl}
           ></video>
@@ -61,13 +71,15 @@ const VideoClip = (props) => {
         </div>
         <div className={classes["sidebar"]}>
           <div
-            className={`${classes["sidebar-like"]} ${classes["sidebar-icon"]}`}
+            className={`${classes["sidebar-icon"]} ${classes[likeClass]}`}
+            onClick={likeHandler}
           >
             <img src="https://img.icons8.com/material-outlined/512/filled-like.png" />
-            <p>{likes}</p>
+            <p>{isLiked ? Number(likes) + 1 : likes}</p>
           </div>
           <div
             className={`${classes["sidebar-buy"]} ${classes["sidebar-icon"]}`}
+            onClick={productPageRouter}
           >
             <img src="https://img.icons8.com/material-outlined/96/null/shopping-cart--v1.png" />
           </div>

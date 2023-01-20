@@ -1,7 +1,6 @@
 .product-images {
   position: relative;
   width: 100%;
-
   overflow: hidden;
 }
 .product-page-container {
@@ -12,7 +11,7 @@
   text-align: left;
 }
 .carousel-image img {
-  height: 55vh;
+  height: 75vh;
   object-fit: cover;
 }
 
@@ -134,7 +133,40 @@
 }
 
 .description {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   color: rgb(64, 64, 64);
+}
+
+.buttons-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.button {
+  width: 90%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: 0.5rem;
+  margin-top: 2rem;
+  outline: none;
+  flex-grow: 1;
+  font-size: 1.25rem;
+}
+
+.add-cart {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.buy {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+.filler {
+  margin-top: 20rem;
 }
