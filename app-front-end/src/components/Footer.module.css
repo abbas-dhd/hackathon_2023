@@ -1,0 +1,50 @@
+.footer {
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  /* height: clamp(60px, 8%, 8%); */
+  height: 3.5rem;
+  z-index: 999;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -1px 10px rgb(0 0 0 / 15%);
+}
+.footer-container {
+  height: clamp(60px, 8%, 8%);
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-bg-image {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  height: 100px;
+  opacity: 20%;
+}
+
+.footer-item {
+  height: 60%;
+  color: #3bc7c7;
+  filter: invert(100%) sepia(0%) saturate(4646%) hue-rotate(47deg)
+    brightness(72%) contrast(104%);
+}
+.footer-item img {
+  height: 100%;
+}
+
+.clips {
+  /* height: 48%; */
+}
+
+.active {
+  filter: invert(0%) sepia(91%) saturate(7497%) hue-rotate(318deg)
+    brightness(82%) contrast(103%);
+}

@@ -1,0 +1,54 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-image-container img {
+  width: 100%;
+}
+
+.hero-button {
+  position: absolute;
+  right: 0%;
+  bottom: 5%;
+
+  width: 10rem;
+  height: 3rem;
+
+  background-color: rgba(0, 0, 0, 0.49);
+  border: none;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+}
+.hero-button div {
+  transform: translateX(0);
+  transition: all 0.15s ease-in-out;
+}
+.hero-button:focus div {
+  transform: translateX(50%);
+  transition: all 0.15s ease-in-out;
+}
+
+.hero-button:focus {
+  color: black;
+  border: 2px solid black;
+  background-color: aliceblue;
+}

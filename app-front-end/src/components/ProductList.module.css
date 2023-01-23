@@ -1,0 +1,10 @@
+.container {
+  margin-bottom: 20vw;
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 1px;
+  overflow: scroll;
+}
